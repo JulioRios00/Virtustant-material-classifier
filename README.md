@@ -32,31 +32,6 @@ Full-stack application for classifying junk disposal bookings to identify potent
 - **Batch processing interface** for existing data
 - **Real-time statistics** dashboard
 
-## Project Structure
-
-```
-/
-├── backend/               # NestJS API server
-│   ├── src/
-│   │   ├── controllers/   # API endpoints (MVC Controllers)
-│   │   ├── services/      # Business logic (MVC Models/Services)
-│   │   ├── models/        # Data models
-│   │   ├── interfaces/    # Type definitions (SOLID: Interface Segregation)
-│   │   ├── dto/          # Data transfer objects
-│   │   └── utils/        # Helper utilities and sample data
-│   └── package.json
-│
-├── frontend/             # React application
-│   ├── src/
-│   │   ├── components/   # React components (MVC Views)
-│   │   ├── hooks/        # Custom React hooks
-│   │   ├── services/     # API integration
-│   │   └── types/        # TypeScript definitions
-│   └── package.json
-│
-└── README.md
-```
-
 ## Classification Logic
 
 ### Text Analysis
@@ -112,17 +87,6 @@ npm run dev
 
 The frontend will run on `http://localhost:3000`
 
-### Development
-Both servers support hot-reload during development. The frontend is configured to proxy API requests to the backend automatically.
-
-## Sample Data
-
-The system includes comprehensive sample data:
-- 10 realistic booking examples
-- Various hazard levels and scenarios
-- Automotive, electronic, medical, and general waste types
-- Can generate 100+ samples for testing batch processing
-
 ## Performance Considerations
 
 ### Rate Limiting
@@ -166,7 +130,6 @@ The system includes comprehensive sample data:
 - **React 18** - Modern React with hooks
 - **TypeScript** - Type safety in frontend
 - **Tailwind CSS** - Utility-first CSS framework
-- **Lucide React** - Beautiful icons
 - **Date-fns** - Date formatting utilities
 - **Axios** - HTTP client for API calls
 
